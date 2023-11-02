@@ -182,13 +182,13 @@ defmodule CarsCommerceTetrisWeb.Components.BoardComponents do
 
   defp tile(%{type: :drop_preview} = assigns) do
     ~H"""
-    <.tile_edged x={@x} y={@y} size={@size} class="fill-slate-400" stroke-0" fill-opacity="0.15" />
+    <.tile_edged x={@x} y={@y} size={@size} class="fill-slate-400 stroke-0" fill-opacity="0.15" />
     """
   end
 
   defp tile(%{type: :blocking} = assigns) do
     ~H"""
-    <.tile_edged x={@x} y={@y} size={@size} class="fill-slate-400" stroke-slate-800" />
+    <.tile_edged x={@x} y={@y} size={@size} class="fill-slate-400 stroke-slate-800" />
     """
   end
 
